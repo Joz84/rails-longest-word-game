@@ -1,0 +1,22 @@
+<h1>Score</h1>
+<p><%= @result[:score] %></p>
+<p><%= @result[:message] %></p>
+<p><%= @attempt %></p>
+<p>Time</p>
+<p><%= @result[:time].round() %> s</p>
+<p>Score</p>
+<p><%= @result[:score] %></p>
+<h1>Grid</h1>
+<ul>
+<% @grid.each do |letter| %>
+  <li><%= letter %></li>
+<% end %>
+</ul>
+
+<h1>Solution</h1>
+<ul>
+<% @result[:solution].each do |word| %>
+  <li><%= word %></li>
+<% end %>
+</ul>
+

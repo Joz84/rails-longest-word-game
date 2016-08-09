@@ -1,0 +1,14 @@
+<h1>Grid</h1>
+<ul>
+<% @grid.each do |letter| %>
+  <li><%= letter %></li>
+<% end %>
+</ul>
+
+<form class="form-inline" action="/score/">
+  <div class="form-group">
+    <label for="question">what is your word ?</label>
+    <input type="text" id="question" name="word" placeholder="solution">
+    <button type="submit" class="btn btn-primary">Go!</button>
+  </div>
+</form>
